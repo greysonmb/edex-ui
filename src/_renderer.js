@@ -246,15 +246,17 @@ function displayLine() {
 }
 
 // Show "logo" and background grid
-async function displayTitleScreen() {
-    let bootScreen = document.getElementById("boot_screen");
-    if (bootScreen === null) {
-        bootScreen = document.createElement("section");
-        bootScreen.setAttribute("id", "boot_screen");
-        bootScreen.setAttribute("style", "z-index: 9999999");
-        document.body.appendChild(bootScreen);
-    }
-    bootScreen.innerHTML = "";
+// If this fails, code is here"
+//async function displayTitleScreen() {
+//   let bootScreen = document.getElementById("boot_screen");
+//    if (bootScreen === null) {
+//        bootScreen = document.createElement("section");
+//        bootScreen.setAttribute("id", "boot_screen");
+//       bootScreen.setAttribute("style", "z-index: 9999999");
+//     document.body.appendChild(bootScreen);
+//    }
+//    bootScreen.innerHTML = "";
+
     window.audioManager.theme.play();
 
     await _delay(400);
