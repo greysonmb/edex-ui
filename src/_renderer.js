@@ -345,7 +345,7 @@ async function initUI() {
     let greeter = document.getElementById("main_shell_greeting");
 
     window.si.users().then(userlist => {
-            greeter.innerHTML += `Welcome back, <em>${userlist[0].user}</em>`;
+            greeter.innerHTML += `Welcome back, <em>Greyson</em>`;
     }).catch(() => {
         greeter.innerHTML += "Welcome back";
     });
